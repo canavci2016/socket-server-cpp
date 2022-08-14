@@ -20,7 +20,6 @@ namespace HDE
 
     public:
         SimpleSocket(int domain, int service, int protocol, int port, u_long interface);
-        virtual int connect_to_network(int sock, struct sockaddr_in address) = 0;
         void test_connection(int);
 
         // getter functions
@@ -31,7 +30,9 @@ namespace HDE
 
         // setter functions
         void set_connection(int connection);
-    }
+
+        virtual int connect_to_network(int sock, sockaddr_in address) = 0;
+    };
 
 }
 

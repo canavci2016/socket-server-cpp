@@ -4,7 +4,7 @@
 #define ConnectingSocket_hpp
 
 #include <stdio.h>
-#include "Socket.hpp"
+#include "SimpleSocket.hpp"
 
 namespace HDE
 {
@@ -16,7 +16,7 @@ namespace HDE
         ConnectingSocket(int domain, int service, int protocol, int port, u_long interface);
         // virtual function from parent
         int connect_to_network(int sock, struct sockaddr_in address) = 0;
-    }
+    };
 
 }
 

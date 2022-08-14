@@ -1,9 +1,9 @@
 
 
-#ifndef hdelibc_hpp
+#ifndef hdelib_main_hpp
 
-#define hdelibc_hpp
+#define hdelib_main_hpp
 
-#include <iostream>
+#include "Networking/hdelib-networking.hpp"
 
 #endif

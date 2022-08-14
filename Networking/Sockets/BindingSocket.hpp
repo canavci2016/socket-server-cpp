@@ -3,8 +3,7 @@
 
 #define BindingSocket_hpp
 
-#include <stdio.h>
-#include "Socket.hpp"
+#include "SimpleSocket.hpp"
 
 namespace HDE
 {
@@ -15,8 +14,8 @@ namespace HDE
     public:
         BindingSocket(int domain, int service, int protocol, int port, u_long interface);
 
-        int connect_to_network(int sock, struct sockaddr_in address) = 0;
-    }
+        int connect_to_network(int sock, sockaddr_in address);
+    };
 
 }
 

@@ -11,7 +11,7 @@ HDE::SimpleSocket::SimpleSocket(int domain, int service, int protocol, int port,
     test_connection(sock);
 };
 
-HDE::SimpleSocket::test_connection(int item)
+void HDE::SimpleSocket::test_connection(int item)
 {
     if (item < 0)
     {
